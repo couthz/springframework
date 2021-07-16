@@ -6,6 +6,9 @@ import com.zhc.springframework.beans.factory.config.BeanDefinition;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 实现了Bean注册, 获取
+ */
 public class DefaultListableBeanFactory extends  AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry{
 
     private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
