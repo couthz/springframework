@@ -15,4 +15,6 @@ public interface BeanFactory {
     /**参考源码, 获取 Bean 时把构造函数的入参信息传递进去了*/
     Object getBean(String name, Object... args) throws BeansException;
 
+    <T> T getBean(String name, Class<T> requiredType) throws BeansException;
+
 }
